@@ -1,9 +1,9 @@
 @import url(utf-8);
 
 body{
-    font-family: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Work Sans';
 }
-
+/* 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif  */
 header{
     display: flex;
     justify-content: center;
@@ -20,13 +20,21 @@ nav{
 
 article{
     background-color: #242323dc;
-    padding: 50px;
+    padding: 25px;
     margin-bottom: 10px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 article a{
     color: white;
-    font-size: 2em;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.conceitual{
+    background-color: rgb(248, 206, 19);
 }
 
 section{
@@ -69,4 +77,9 @@ data{
 
 footer{
     background-color: gray;
+}
+
+footer a img{
+    width: 24px;
+    height: 24px;
 }
