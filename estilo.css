@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 *{
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -56,6 +58,8 @@ article a{
 }
 
 .conceitual{
+    width: 100%;
+    height: auto;
     background-color: rgb(248, 206, 19);
 }
 
