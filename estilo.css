@@ -14,32 +14,33 @@ body{
 
 header{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-nav{
-    text-align: center;
-    display: inline-block;
-    background-color: #f8ce13;
-    padding-right: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+.containerCarosel{
+    height: 28rem;
 }
 
-nav ul li a{
-    color: black;
-    text-decoration: none;
+.carousel{
+    height: 30em;
+    width: 30em;
 }
 
-nav ul li a:hover{
-    background-color: #e6bf13;
-    color: white;
-    text-decoration: underline;
-    flex-grow: inherit;
+.carousel-item{
+    height: 30em;
+    width: 30em;
 }
 
-nav ul li a:visited{
-    font-weight: bold;
+.carouselImg{
+    position: relative;
+    z-index: 100;
+    top: -15rem;
+    left: 3rem;
+}
+
+.heightCarousel{
+    height: 20em;
 }
 
 article{
