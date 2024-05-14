@@ -1,70 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estúdio Arae</title>  <!--mudar para titulo-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estúdio Arae</title>
+    <!--mudar para titulo-->
     <!-- Inserir um favicon menor, está muito grande-->
-    <link rel="shortcut icon" href="imagens/icones/logoshape-01.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
-    <!-- Algumas mudanças | Arae -->
+    <link
+      rel="shortcut icon"
+      href="imagens/icones/logoshape-01.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="estilizando.css" />
+  </head>
+  <body>
     <header>
-        <!--Inserir um carrossel com imagens das hqs-->
-        <img src="imagens/icones/logo-arae-preto.webp" alt="Logo Arae Estúdio">
-
+      <div class="center">
+        <menu>
+          <!-- Diminuir a logo para caber no espaço de barra superior -->
+          <a class="logo" href="http://127.0.0.1:5500/Estudio_Arae/"
+            ><img
+              src="imagens/icones/logo-arae-preto.webp"
+              alt="Logo do Estudio Arae"
+          /></a>
+          <div class="menu-items">
+            <a href="#">Sobre</a><a href="#">Projetos</a><a href="#">Apoia.se</a
+            ><a href="#">Loja</a><a href="#">Equipe</a><a href="#">Contato</a>
+          </div>
+        </menu>
+      </div>
     </header>
-    <!-- Adicionar a navegação para o header -->
-    <nav>
-        <!--Melhorar o navbar-->
-        <ul type="none">
-            <li><a href="https://apoia.se/bnummundonovo" target="_blank">APOIA.se</a></li>
-            <li>Projetos</li>
-            <li><a href="sobre.html" target="_self">Sobre</a></li>
-            <li><a href="contato.html" target="_self">Contato</a></li>
-        </ul>
-    </nav>
-    <article>
-        <a href="https://apoia.se/bnummundonovo" target="_blank" >Contribua com nossas narrativas gráficas através do <span class="apoia">APOIA.se</span> e ajude-nos a produzir novas histórias.</a>
-    </article>
+
     <main>
-        <section>
-            <h1>Boas Vindas,</h1>
-            <p>Somos um <strong>Estúdio Independente</strong> localizado em Salvador - Bahia que produz e desenvolve narrativas através de histórias em quadrinhos e animações.</p>
-            <!--Inserir a imagen cortada no photoshop (Visto)-->
-            <img class="conceitual" src="imagens/Arte-Home-Arae.png" alt="Arte com as principais historias">
-        </section>
-        <section class="hqs">
-            <main class="s_hqs">
-                <h1>Projetos</h1>
-                <!--Talvez meter umas divs para separara os carroceis-->
-                <h2>Olhos de kether</h2>
-                <data>2018 - 2019</data>
-                <p class="p_hqs">Olhos de kether é uma série piloto de cinco capítulos sobre um universo vampírico onde monges de um santuário secreto reúnem discipúlos para proteger o universo da corrupção de uma máscara.</p>
-            </main>
+      <!-- Carrossel animado -->
+      <section class="carrossel">
+        <!-- Adicionar aqui os cards animados para convidar telespectador -->
+        <div class="slides">
+          <input type="radio" name="radio-tbn" id="radio1" />
+          <input type="radio" name="radio-tbn" id="radio2" />
+          <input type="radio" name="radio-tbn" id="radio3" />
 
-            <main class="s_hqs">
-                <h2>Sinistras Histórias</h2>
-                <data>2018 - 2019</data>
-                <p class="p_hqs">Uma pequena série de <strong>curtas</strong> de horror, suspense e drama com três narrativas de três autores diferentes.</p>
-            </main>
+          <div class="slide first">
+            <img
+              src="imagens/icones/postaji1920.gif"
+              alt="Animação em Gif de Quadrinho Olhos de Kether"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="imagens/icones/sinistras1920.gif"
+              alt="Animação em Gif de Histórias Sinistras"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="imagens/icones/apoiase1920.gif"
+              alt="Animação em Gif de Quadrinho B"
+            />
+          </div>
 
-            <main class="s_hqs">
-                <h2>B num mundo novo</h2>
-                <data>2019 - 2020</data>
-                <p class="p_hqs">Conheça as aventuras de B, uma garota normal que gosta de se divertir usando sua imaginção, que acaba caindo num novo mundo diferente onde ela passará por diversas aventuras.</p>
-            </main>
-            <p> Use o <a href="https://apoia.se/bnummundonovo" target="_blank">APOIA.se</a> e contribua também com a produção.</p>
-        </section>
-        <footer>
-            <!--Reduzir os tamanhos dos ícones e inseri-los (Visto)-->
-            <a href="https://www.facebook.com/estudioarae" target="_blank"><img src="imagens/icones/005-facebook.png" alt="Link do Facebook do Estudio Arae"></a>
-            <a href="https://www.instagram.com/estudioarae/" target="_blank"><img src="imagens/icones/instagram (Personalizado) (1).png" alt="Link de Instagram do Estudio Arae"></a>
-            <!-- <a href="https://br.pinterest.com/estudioarae/_saved/" target="_blank"><img src="#" alt="Link do Pinterest do Estudio Arae"></a> -->
-            <a href="#" target="_blank"><img src="imagens/icones/003-whatsapp.png" alt="Link para o WhatsApp do Estudio Arae"></a>
-        </footer>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+          </div>
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </section>
+
+      <!-- Novidades do site -->
+      <article class="destaques">
+        <!-- Separar as duas divs para cada lado, trazendo as informações do painel do lado esquerdo para o lado direito (somente texto) -->
+        <div class="infoDestaques">
+          <h1 class="titulo">Boas vindas!</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+            voluptas dolor porro nulla ex voluptatum animi! Recusandae saepe
+            dolore officiis tenetur illo id, minima architecto inventore omnis
+            dolorum, dolorem cupiditate.
+          </p>
+        </div>
+        <div class="imagensDestaques"></div>
+      </article>
+      <!-- Projetos -->
+      <section id="projects">
+        <!-- Aqui irá se repetir por quantas obras forem liberadas -->
+        <div class="carrosselProjects">
+          <h1 class="titulo">Projetos</h1>
+          <div class="tituloCarrossel">
+            <h2 class="subtitulo">B num mundo novo</h2>
+            <p>2019 - 2020</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              numquam culpa possimus blanditiis esse delectus nisi reprehenderit
+              quod architecto unde, tempora praesentium mollitia officia
+              corporis non vero dicta libero expedita!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contato -->
+      <article id="contact">
+        <h1 class="titulo">Contatos</h1>
+        <img src="" alt="" class="WhatsApp" />
+        <img src="" alt="" class="Email" />
+        <input type="email" name="" id="" />
+        <textarea name="" id="" cols="50" rows="10"></textarea>
+        <input type="button" value="" />
+      </article>
     </main>
-</body>
+    <footer>
+      <img src="" alt="" />
+      <h2></h2>
+      <p>
+        &copy; 2024 <br />
+        />Leo Fraga
+      </p>
+      <section id="socialMedia"></section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

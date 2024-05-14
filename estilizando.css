@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: 'Work Sans';
+  background: white url('imagens/Background Arae Estudio - Final.png') top
+    center no-repeat scroll;
+  background-size: cover;
+}
+
+header {
+  padding: 2px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Incluir essa borda somente quando rolar a tela para baixo */
+  border-bottom: 1px solid #20a6ff;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 80px;
+}
+
+.logo img {
+  max-width: 120px;
+  width: 100%;
+  margin-right: 80px;
+}
+
+menu {
+  display: flex;
+}
+
+.menu-items {
+  padding: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  align-self: center;
+}
+
+.center {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.menu-items a {
+  color: rgb(120, 120, 120);
+  margin-right: 80px;
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-items a:hover {
+  color: rgb(248, 206, 19);
+}
+
+/* seção do carrossel */
+.carrossel {
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  transition: 1s;
+}
+
+.slide img {
+  width: 1349px;
+  height: 500px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.65s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.manual-btn:hover {
+  background-color: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.65s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 100%;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: white;
+}
+/* Aprender sobre o carrossel para implicar as imagens animadas aqui */
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  color: rgba(158, 158, 158, 0.795);
+  font-size: 4em;
+  font-weight: normal;
+}
+
+/* Rodapé */
+footer {
+  margin: auto;
+  background-color: #912e17;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  font-family: 'Fredericka the Great', cursive;
+}
