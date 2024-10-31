@@ -1,3 +1,4 @@
+/* Configurações universais */
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
@@ -17,121 +18,136 @@ body {
 
 header {
   padding: 2px 0;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.805);
+
   /* Incluir essa borda somente quando rolar a tela para baixo */
-  border-bottom: 1px solid #20a6ff;
-}
-
-.logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 80px;
-}
-
-.logo img {
-  max-width: 120px;
-  width: 100%;
-  margin-right: 80px;
-}
-
-menu {
-  display: flex;
-}
-
-.menu-items {
-  padding: 20px;
-  vertical-align: middle;
-  display: inline-block;
-  align-self: center;
+  /* border-bottom: 1px solid #20a6ff; */
 }
 
 .center {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2%;
+
+  display: flex;
+}
+
+.logo img {
+  max-width: 120px;
+  vertical-align: middle;
+}
+
+.menu-items {
+  align-content: center;
+  align-self: center;
+  padding-left: 60px;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
 }
 
 .menu-items a {
   color: rgb(120, 120, 120);
-  margin-right: 80px;
   text-decoration: none;
-
-  font-size: 20px;
   font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+
+  width: 100%;
+  height: 100%;
+  margin-right: 9%;
 }
 
 .menu-items a:hover {
   color: rgb(248, 206, 19);
+  background-color: rgba(120, 120, 120, 0.236);
+  border-radius: 120px;
+  height: 100px;
+  width: 100px;
 }
 
-/* seção do carrossel */
+/* Seção do carrosel */
 .carrossel {
-  margin: 0 auto;
   width: 100%;
-  height: 400px;
+
   overflow: hidden;
+  margin: 0 auto;
+  position: relative;
 }
 
 .slides {
-  width: 100%;
-  height: 400px;
   display: flex;
-}
-
-.slides input {
-  display: none;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
 
 .slide {
-  position: relative;
-  transition: 1s;
+  min-width: 100%;
+  /* box-sizing: border-box; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide img {
-  width: 1349px;
-  height: 500px;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
 }
 
+.navigation-auto,
 .manual-navigation {
   position: absolute;
-  width: 100%;
-  margin-top: -40px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
 }
 
-.manual-btn {
+.manual-navigation label {
   border: 2px solid white;
-  padding: 5px;
   border-radius: 50%;
-  cursor: pointer;
-  transition: 0.65s;
+  padding: 5px;
+  transition: background 0.3s ease-in-out;
 }
 
-.manual-btn:not(:last-child) {
-  margin-right: 20px;
+.manual-navigation label:hover {
+  background: white;
 }
 
-.manual-btn:hover {
-  background-color: white;
+input[type='radio'] {
+  display: none;
 }
 
-#radio1:checked ~ .first {
+/* input:checked ~ .slides { */
+input:checked ~ .first {
+  /* transform: translateX(0); */ /* Ajuste conforme necessário */
   margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+/* input#radio2:checked ~ .slides { */
+input#radio2:checked ~ .first {
+  /* transform: translateX(-100%); */
   margin-left: -100%;
 }
 
-#radio3:checked ~ .first {
+/* input#radio3:checked ~ .slides { */
+input#radio3:checked ~ .first {
+  /* transform: translateX(-200%); */
   margin-left: -200%;
 }
 
+.manual-btn {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
 .navigation-auto div {
+  margin-right: 5px;
   border: 2px solid #20a6ff;
-  padding: 5px;
   border-radius: 10px;
+  padding: 5px;
   cursor: pointer;
   transition: 0.65s;
 }
@@ -145,7 +161,7 @@ menu {
 }
 
 .navigation-auto div:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
@@ -158,24 +174,4 @@ menu {
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
   background-color: white;
-}
-/* Aprender sobre o carrossel para implicar as imagens animadas aqui */
-
-h1 {
-  font-family: 'Fredericka the Great', cursive;
-  color: rgba(158, 158, 158, 0.795);
-  font-size: 4em;
-  font-weight: normal;
-}
-
-/* Rodapé */
-footer {
-  margin: auto;
-  background-color: #912e17;
-  text-align: center;
-  padding: 10px;
-}
-
-footer p {
-  font-family: 'Fredericka the Great', cursive;
 }
