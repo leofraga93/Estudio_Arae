@@ -14,3 +14,11 @@ function nextImage() {
 
   document.getElementById('radio' + contar).checked = true
 }
+
+/* 
+const imagensDestaque = document.querySelectorAll(".imagensDestaques img");
+imagensDestaque.forEach((img, index) => {
+  img.style.border = '20px solid red';
+  img.style.marginright = '-20px';
+})
+*/

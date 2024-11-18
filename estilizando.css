@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  /* text-decoration: none; */
 }
 
 body {
@@ -24,8 +25,31 @@ header {
   /* border-bottom: 1px solid #20a6ff; */
 }
 
+/* Texto */
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 4em;
+  font-weight: normal;
+
+  padding-bottom: 4px;
+  /*
+  color: rgba(158, 158, 158, 0.795);
+  */
+}
+
+p {
+  /* color: rgba(158, 158, 158, 0.795); */
+  font-size: 1em;
+  padding-top: 6px;
+}
+
+p a {
+  color: black;
+}
+
+/* Header */
 .center {
-  max-width: 1280px;
+  max-width: 1460px;
   margin: 0 auto;
   padding: 0 2%;
 
@@ -34,6 +58,7 @@ header {
 
 .logo img {
   max-width: 120px;
+  margin: 0 60px;
   vertical-align: middle;
 }
 
@@ -91,8 +116,8 @@ header {
 
 .slide img {
   width: 100%;
-  height: auto;
-  max-height: 500px;
+  height: 100%;
+  max-height: 690px;
   object-fit: cover;
 }
 
@@ -174,4 +199,68 @@ input#radio3:checked ~ .first {
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
   background-color: white;
+}
+
+/* Main */
+section.destaques {
+  margin-top: 16px;
+  padding: 4px;
+  height: 345px;
+
+  justify-content: space-between;
+  align-items: flex-start;
+
+  background-color: rgb(248, 206, 19);
+  border-radius: 16px 16px 16px 16px;
+  /*   
+  background-color: rgba(120, 120, 120, 0.575);
+  background-color: rgba(158, 158, 158, 0.795);
+  */
+}
+
+.infoDestaques {
+  flex: 1;
+  padding: 0 2%;
+  margin-right: 4px;
+
+  /* 
+  margin: 0 auto;
+  max-width: 1280px;
+  */
+}
+
+.imagensDestaques {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  position: relative;
+  left: -44px;
+
+  justify-content: end;
+  align-items: center;
+  gap: 2px;
+}
+
+.itemDestaque {
+  width: 100%;
+  height: 335px;
+  margin-right: -40px;
+
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.itemDestaque > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.itemDestaque > img:hover {
+  transform: scale(1.1);
 }
