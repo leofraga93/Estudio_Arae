@@ -31,14 +31,17 @@ h1 {
   font-size: 4em;
   font-weight: normal;
 
-  padding-bottom: 4px;
+  padding: 8px 0 24px 0;
+
   /*
   color: rgba(158, 158, 158, 0.795);
   */
 }
 
 p {
-  /* color: rgba(158, 158, 158, 0.795); */
+  /*
+  color: rgba(158, 158, 158, 0.795);
+  */
   font-size: 1em;
   padding-top: 6px;
 }
@@ -53,6 +56,10 @@ p a {
   margin: 0 auto;
   padding: 0 2%;
 
+  /*   display: flex; */
+}
+
+menu {
   display: flex;
 }
 
@@ -85,7 +92,8 @@ p a {
 
 .menu-items a:hover {
   color: rgb(248, 206, 19);
-  background-color: rgba(120, 120, 120, 0.236);
+  background-color: rgba(158, 158, 158, 0.795);
+
   border-radius: 120px;
   height: 100px;
   width: 100px;
@@ -108,7 +116,7 @@ p a {
 
 .slide {
   min-width: 100%;
-  /* box-sizing: border-box; */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +210,7 @@ input#radio3:checked ~ .first {
 }
 
 /* Main */
-section.destaques {
+.destaques {
   margin-top: 16px;
   padding: 4px;
   height: 345px;
@@ -216,17 +224,13 @@ section.destaques {
   background-color: rgba(120, 120, 120, 0.575);
   background-color: rgba(158, 158, 158, 0.795);
   */
+
+  display: flex;
 }
 
 .infoDestaques {
   flex: 1;
   padding: 0 2%;
-  margin-right: 4px;
-
-  /* 
-  margin: 0 auto;
-  max-width: 1280px;
-  */
 }
 
 .imagensDestaques {
@@ -255,12 +259,67 @@ section.destaques {
   cursor: pointer;
 }
 
+.itemDestaque:hover {
+  transform: scale(1.1);
+}
+
 .itemDestaque > img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.itemDestaque > img:hover {
-  transform: scale(1.1);
+/* Projetos */
+#projects {
+  width: 100%;
+  margin: 16px auto;
+  padding: 24px;
+
+  background-image: linear-gradient(
+    100deg,
+    rgba(158, 158, 158, 0.795) 50%,
+    rgba(255, 255, 255, 0) 50%
+      /* Analisando a aplicação desta maneira transparente
+    rgb(248, 206, 19) 50% 
+    */
+  );
+}
+
+.projectsCenter {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 1.7%;
+}
+
+.projects {
+  display: flex;
+
+  justify-content: left;
+  align-items: center;
+
+  margin-bottom: 42px;
+}
+
+.infoProjects {
+  width: 500px;
+  text-align: center;
+  padding: 0 2%;
+  margin: 0 18px 0 0;
+  /* 
+  flex: 1;
+  border: 2px solid red;
+  */
+}
+
+.imagensProjects {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid darkviolet;
+}
+
+.imagensProjects > img {
+  border: 14px solid white;
+  box-shadow: 10px 16px 16px black;
 }
