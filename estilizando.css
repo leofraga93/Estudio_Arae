@@ -12,14 +12,14 @@
 
 body {
   font-family: 'Work Sans';
-  background: white url('imagens/Background Arae Estudio - Final.png') top
-    center no-repeat scroll;
+  background: url('imagens/Background Arae Estudio - Final.png') top center
+    no-repeat scroll;
   background-size: cover;
 }
 
 header {
   padding: 2px 0;
-  background-color: rgba(255, 255, 255, 0.805);
+  background-color: rgba(255, 255, 255, 0.966);
 
   /* Incluir essa borda somente quando rolar a tela para baixo */
   /* border-bottom: 1px solid #20a6ff; */
@@ -36,6 +36,11 @@ h1 {
   /*
   color: rgba(158, 158, 158, 0.795);
   */
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: bold;
 }
 
 p {
@@ -94,7 +99,7 @@ menu {
   color: rgb(248, 206, 19);
   background-color: rgba(158, 158, 158, 0.795);
 
-  border-radius: 120px;
+  border-radius: 200px 200px 20px 200px;
   height: 100px;
   width: 100px;
 }
@@ -218,13 +223,17 @@ input#radio3:checked ~ .first {
   justify-content: space-between;
   align-items: flex-start;
 
-  background-color: rgb(248, 206, 19);
+  background-image: linear-gradient(
+    98deg,
+    rgb(248, 206, 19) 96.3%,
+    rgba(255, 255, 255, 0) 96.3%
+  );
+
   border-radius: 16px 16px 16px 16px;
   /*   
   background-color: rgba(120, 120, 120, 0.575);
   background-color: rgba(158, 158, 158, 0.795);
   */
-
   display: flex;
 }
 
@@ -240,7 +249,7 @@ input#radio3:checked ~ .first {
   display: flex;
 
   position: relative;
-  left: -44px;
+  left: -50px;
 
   justify-content: end;
   align-items: center;
@@ -275,51 +284,93 @@ input#radio3:checked ~ .first {
   margin: 16px auto;
   padding: 24px;
 
+  background-color: rgba(158, 158, 158, 0.5);
+  /* 
+  
   background-image: linear-gradient(
-    100deg,
-    rgba(158, 158, 158, 0.795) 50%,
-    rgba(255, 255, 255, 0) 50%
-      /* Analisando a aplicação desta maneira transparente
-    rgb(248, 206, 19) 50% 
+    360deg,
+    rgba(158, 158, 158, 0.5) 94%,
+    rgba(255, 255, 255, 0) 94%
+    / *    Analisando a aplicação desta maneira transparente
+    rgb(248, 206, 19) 50%  * /
+    );
     */
-  );
 }
 
 .projectsCenter {
+  /* background-color: rgba(158, 158, 158, 0.3); */
+  width: 100%;
   max-width: 1460px;
   margin: 0 auto;
-  padding: 0 1.7%;
+  padding: 8px 1.7%;
+
+  /* 
+  filter: blur(10px);
+  opacity: 0.5;
+  z-index: -1;
+ */
 }
 
 .projects {
   display: flex;
-
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
 
+  width: 100%; /* Certifica que o contêiner ocupa toda a largura disponível */
   margin-bottom: 42px;
 }
 
 .infoProjects {
-  width: 500px;
+  flex: 1;
+  margin: 0 10px; /* Espaçamento entre os itens */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
-  padding: 0 2%;
-  margin: 0 18px 0 0;
-  /* 
-  flex: 1;
-  border: 2px solid red;
+
+  transition: transform 0.3s ease 0.3s, box-shadow 0.3s ease 0.3s;
+  cursor: pointer;
+}
+
+.containerProjects:hover {
+  transform: translateY(-4px);
+  color: darkviolet;
+}
+
+.infoProjects img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Paginas */
+#paginas {
+  /*
+  margin: 48px auto; 
   */
+  border: 1px solid red;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.imagensProjects {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-
-  border: 2px solid darkviolet;
+#paginas > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-.imagensProjects > img {
-  border: 14px solid white;
-  box-shadow: 10px 16px 16px black;
+#paginas > .infoPaginas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
