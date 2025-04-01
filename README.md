@@ -6,6 +6,8 @@
   Isso para poder aprofundar meus conhecimentos com essas linguagens.
 </p>
 
+
+<img src="https://github.com/user-attachments/assets/744ad007-6380-4d46-91e7-1d4f21e065cb">
 <!--
 **leofraga93/leofraga93** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
