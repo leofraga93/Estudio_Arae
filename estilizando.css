@@ -571,7 +571,7 @@ input#radio3:checked ~ .first {
   border: 2px solid darkviolet;
 }
 
-label {
+.contact label {
   position: absolute;
   background: transparent;
   color: white;
