@@ -575,6 +575,7 @@ input#radio3:checked ~ .first {
   position: absolute;
   background: transparent;
   color: white;
+
   font-family: sans-serif;
   left: 1em;
   top: 0.75em;

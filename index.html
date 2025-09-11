@@ -1,65 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estúdio Arae</title>
-    <!--mudar para titulo-->
-    <!-- Inserir um favicon menor, está muito grande-->
     <link
       rel="shortcut icon"
       href="imagens/icones/logoshape-01.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="estilizando.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/media-queries.css" />
+    <title>Estúdio Arae</title>
   </head>
   <body>
     <header>
+      <!-- Cabeçalho -->
       <menu class="center">
-        <!-- Diminuir a logo para caber no espaço de barra superior -->
-        <a class="logo" href="http://127.0.0.1:5500/index.html">
-          <img
-            src="imagens/icones/logo-arae-preto.webp"
-            alt="Logo do Estudio Arae"
-        /></a>
-        <div class="menu-items">
-          <a href="#">Sobre</a>
-          <a href="#">Projetos</a>
-          <a href="#">Apoia.se</a>
-          <a href="#">Loja</a>
-          <a href="#">Equipe</a>
-          <a href="#">Contato</a>
+        <div class="menu">
+          <span id="menu-burguer" class="material-icons">menu</span>
+          <a class="logo" href="#"
+            ><img
+              src="imagens/icones/logo-arae-preto.webp"
+              alt="Logo Estudio Arae"
+            />
+          </a>
         </div>
+        <ul id="menu-items" class="">
+          <li href="#">Sobre</li>
+          <li href="#">Projetos</li>
+          <li href="#">Apoia.se</li>
+          <li href="#">Loja</li>
+          <li href="#">Equipe</li>
+          <li href="#">Contato</li>
+        </ul>
       </menu>
     </header>
-
     <main>
       <!-- Carrossel animado -->
       <section class="carrossel">
-        <!-- Adicionar aqui os cards animados para convidar telespectador -->
         <div class="slides">
-          <input type="radio" name="radio-tbn" id="radio1" />
-          <input type="radio" name="radio-tbn" id="radio2" />
-          <input type="radio" name="radio-tbn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
 
           <div class="slide first">
-            <img
-              src="imagens/icones/postaji1920.gif"
-              alt="Animação em Gif de Quadrinho Olhos de Kether"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="imagens/icones/Spundisky-portrait-Arae.png"
+                type="image/png"
+              />
+              <img
+                src="imagens/icones/postaji1920.gif"
+                alt="Animação em GIF de Quadrinho Olhos de Kether"
+              />
+            </picture>
           </div>
           <div class="slide">
-            <img
-              src="imagens/icones/sinistras1920.gif"
-              alt="Animação em Gif de Histórias Sinistras"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="imagens/icones/insta002.png"
+                type="image/png"
+              />
+              <img
+                src="imagens/icones/sinistras1920.gif"
+                alt="Animação em GIF de Histórias Sinistras"
+              />
+            </picture>
           </div>
           <div class="slide">
-            <img
-              src="imagens/icones/apoiase1920.gif"
-              alt="Animação em Gif de Quadrinho B"
-            />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="imagens/icones/Screenshot_14_B.png"
+                type="image/png"
+              />
+              <img
+                src="imagens/icones/apoiase1920.gif"
+                alt="Animação em GIF de Quadrinho B num mundo novo"
+              />
+            </picture>
           </div>
 
           <div class="navigation-auto">
@@ -69,7 +94,7 @@
           </div>
         </div>
 
-        <div class="manual-navigation">
+        <div class="navigation-manual">
           <label for="radio1" class="manual-btn"></label>
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
@@ -78,20 +103,19 @@
 
       <!-- Boas vindas e novidades do site -->
       <section id="destaques" class="destaques center">
-        <!-- Separar as duas divs para cada lado, trazendo as informações do painel do lado esquerdo para o lado direito (somente texto) -->
         <div class="infoDestaques">
-          <h1 class="titulo">Boas vindas!</h1>
+          <h1 class="titulo">Boas Vindas!</h1>
           <p>
             Somos um <strong>estúdio independente</strong> localizado em
-            Salvador - Bahia que produz e desenvolve narrativas através de
+            Salvador - Bahia, que produz e desenvolve narrativas através de
             histórias em quadrinhos e animações.
           </p>
           <p>
             Contribua conosco através do
             <a href="https://apoia.se/bnummundonovo" target="_blank">
-              <span class="apoia">APOIA.se</span></a
-            >
-            e ajude-nos a produzir novas histórias.
+              <span>APOIA.se</span>
+            </a>
+            e ajude-nos a produzir novas historias.
           </p>
         </div>
 
@@ -99,7 +123,7 @@
           <div class="itemDestaque">
             <img
               src="imagens/HQ-olhosKether/005 (Pequeno)-fotor-20241117143825.png"
-              alt="Imagen cortada de Olhos de Kether"
+              alt="Imagem cortada de Olhos de Kether"
             />
           </div>
           <div class="itemDestaque">
@@ -133,31 +157,30 @@
             />
           </div>
         </article>
+        <button class="buttonDestaque"><p>Folear</p></button>
       </section>
 
       <!-- Projetos -->
-      <section id="projects">
-        <div class="projectsCenter">
-          <!-- Aqui irá se repetir por quantas obras forem liberadas -->
-          <h1 class="titulo">Projetos</h1>
+      <section id="projects" class="center projectsCenter">
+        <h1 class="titulo">Projetos</h1>
+
+        <div class="projectsWrapper">
+          <span id="prev" class="material-icons nav-button">chevron_left</span>
 
           <div class="projects">
             <div class="infoProjects">
               <div class="containerProjects">
                 <img
-                  width="220px"
                   src="imagens/Capas/capa B mundo novo (Pequeno).png"
-                  alt="Capa de HQ 'B num mundo novo'"
+                  alt="Capa B num mundo novo"
                 />
                 <h2>B num mundo novo</h2>
                 <p>2018 - 2019</p>
               </div>
             </div>
-
             <div class="infoProjects">
               <div class="containerProjects">
                 <img
-                  width="220px"
                   src="imagens/Capas/capa HS - a bordo (Pequeno).jpg"
                   alt="Capa de HQ A bordo"
                 />
@@ -165,26 +188,19 @@
                 <p>2018 - 2019</p>
               </div>
             </div>
-
             <div class="infoProjects">
               <div class="containerProjects">
                 <img
-                  width="220px"
                   src="imagens/Capas/capa HS - estive no (Pequeno).png"
                   alt="Capa de HQ 'Estive no inferno e lembrei de você'"
                 />
-                <!-- Devo procurar uma forma de quebrar o texto dentro do escopo do espaço reservado
-                <h2>Estive no inferno e lembrei de você</h2>
-                 -->
                 <h2>Lembrei de você</h2>
                 <p>2018 - 2019</p>
               </div>
             </div>
-
             <div class="infoProjects">
               <div class="containerProjects">
                 <img
-                  width="220px"
                   src="imagens/Capas/capa HS - Luz negra (Pequeno).jpg"
                   alt="Capa de HQ 'Luz Negra'"
                 />
@@ -192,11 +208,9 @@
                 <p>2018 - 2019</p>
               </div>
             </div>
-
             <div class="infoProjects">
               <div class="containerProjects">
                 <img
-                  width="220px"
                   src="imagens/Capas/capa Mago moderno (Pequeno).jpg"
                   alt="Capa de HQ 'Mago moderno'"
                 />
@@ -204,11 +218,9 @@
                 <p>2018 - 2019</p>
               </div>
             </div>
-
             <div class="infoProjects">
               <div class="containerProjects">
                 <img
-                  width="220px"
                   src="imagens/Capas/capa Olhos de kether (Pequeno).jpg"
                   alt="Imagen cortada de Olhos de Kether"
                 />
@@ -217,108 +229,34 @@
               </div>
             </div>
           </div>
-
-          <!-- <div class="projects">
-            <div class="infoProjects">
-              <h2>Olhos de Kether</h2>
-              <p>2018 - 2019</p>
-              <p>
-                Olhos de kether é uma série piloto de cinco capítulos sobre um
-                universo vampírico onde monges de um santuário secreto reúnem
-                discipúlos para proteger o universo da corrupção de uma máscara.
-              </p>
-            </div>
-            <article class="imagensProjects">
-              <img
-                width="260px"
-                src="imagens/Capas/capa Olhos de kether (Pequeno).jpg"
-                alt="Imagen cortada de Olhos de Kether"
-              />
-            </article>
-          </div>
-
-          <div class="projects">
-            <div class="infoProjects">
-              <h2>Sinistras Histórias</h2>
-              <p>2018 - 2019</p>
-              <p class="infoProjectsHidden">
-                <! -- Incluir com JS esta classe para sumir com a descrição -- >
-                Uma pequena série de curtas de horror, suspense e drama com três
-                narrativas de três autores diferentes.
-              </p>
-            </div>
-            <article class="imagensProjects">
-              <img
-                width="260px"
-                src="imagens/Capas/capa HS - estive no (Pequeno).png"
-                alt="Imagem cortada de Histórias Sinistras"
-              />
-              <div class="grid-container">
-                <div id="img1" class="grid-item">
-                  <img
-                    width="240px"
-                    src="imagens/Capas/capa HS - estive no (Pequeno).png"
-                    alt=""
-                  />
-                </div>
-                <div id="img2" class="grid-item">
-                  <img
-                    width="240px"
-                    src="imagens/Capas/capa HS - Luz negra (Pequeno).jpg"
-                    alt=""
-                  />
-                </div>
-                <div id="img3" class="grid-item">
-                  <img
-                    width="240px"
-                    src="imagens/Capas/capa Mago moderno (Pequeno).jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="projects">
-            <div class="infoProjects">
-              <h2>B num mundo novo</h2>
-              <p>2019 - 2020</p>
-              <p>
-                Conheça as aventuras de B, uma garota normal que gosta de se
-                divertir usando sua imagmção, que acaba caindo num novo mundo
-                diferente onde ela passará por diversas aventuras.
-              </p>
-            </div>
-            <article class="imagensProjects">
-              <img
-                width="260px"
-                src="imagens/HQ-b/004-fotor-2024111714365.png"
-                alt="Imagem cortada de B num mundo novo"
-              />
-            </article>
-          </div> -->
+          <span id="next" class="material-icons nav-button">chevron_right</span>
         </div>
       </section>
 
-      <!-- Noticias -->
+      <!-- Notícias -->
       <section id="noticias" class="center">
         <h1>Notícias</h1>
+
         <div class="news-cards">
           <div class="news-images">
             <img
               src="imagens/historiasSinistras/HQ-fuiAoInferno/Ante-Capítulo 1 (Pequeno).png"
-              alt="Card contendo notícias sobre HQ-fuiAoInferno"
+              alt="Card contendo noticia sobre HQ-fuiAoInferno"
             />
           </div>
           <div class="news-card">
-            <p>Prévia</p>
-            <h2>
+            <h2>Prévia</h2>
+            <!-- <p>
               Projeto desenhado e roteirizado pelo Filipe Diniz, com parceria de
               oBreu e Atmocubo, eles conseguem apresentar em pequenos traços uma
               obra que consegue conversar com o leitor e prender sua atenção na
               narrativa muito interessante até o ápice de sua história, depois
               disso é mais do mesmo, acompanhe!
-            </h2>
+            </p> -->
+            <p>
+              Projeto desenhado e roteirizado pelo Filipe Diniz, com parceria de
+              oBreu e Atmocubo, acompanhe!
+            </p>
             <p class="data-publicado">2018 - 2019</p>
           </div>
         </div>
@@ -326,17 +264,21 @@
           <div class="news-images">
             <img
               src="imagens/HQ-b/005 (Pequeno).png"
-              alt="Card contendo noticias sobre HQ-b"
+              alt="Card contendo noticia sobre HQ-b"
             />
           </div>
           <div class="news-card">
-            <p>Personagens</p>
-            <h2>
+            <h2>Personagens</h2>
+            <!-- <p>
               Desenhado por oBreu, Atmocubo e roteirizado em parceria de toda a
               equipe do estúdio Arae, eles apresentam "B" e o "Mago" dois
               protagonistas de uma história bastante profundo com um ótimo toque
               de humor.
-            </h2>
+            </p> -->
+            <p>
+              Desenhado por oBreu, Atmocubo e roteirizado em parceria de toda a
+              equipe do estúdio Arae.
+            </p>
             <p class="data-publicado">2018 - 2019</p>
           </div>
         </div>
@@ -348,47 +290,50 @@
             />
           </div>
           <div class="news-card">
-            <p>Apresentação</p>
-            <h2>
+            <h2>Apresentação</h2>
+            <!-- <p>
               Observe o mundo por uma nova ótica, esta narrativa desenvolve
               muito bem os personagens e apresentam ao público um desenrolar da
               história de forma bem cativante, desenhado por Filipe Diniz e
               Atmocubo, e roteirizado por oBreu, veja o mundo pela perspectiva
               deles.
-            </h2>
+            </p> -->
+            <p>
+              Desenhado por Filipe Diniz e Atmocubo, e roteirizado por oBreu,
+              veja o mundo pela perspectiva deles.
+            </p>
             <p class="data-publicado">2018 - 2019</p>
           </div>
         </div>
+        <button class="buttonDestaque2"><p>Saiba Mais</p></button>
       </section>
 
-      <!-- Páginas -->
-      <section id="paginas">
-        <!-- <div class="container-slider"> -->
-        <div class="carrossel">
-          <button id="prev-button" class="nav-button">&lt;</button>
-          <!-- <div class="container-images"> -->
-          <div class="slides">
-            <div class="slide">
+      <!-- Paginas -->
+      <section id="paginas" class="center">
+        <div class="container">
+          <span id="prev-button" class="material-icons">chevron_left</span>
+          <div class="containerSlides">
+            <div class="frame">
               <img
                 src="imagens/historiasSinistras/HQ-fuiAoInferno/originais/Banner Tapas.png"
                 alt="Personagem Histórias Sinistras"
-                class="slider"
+                class="cover-img"
               />
               <div class="slide-info">
-                <h2>Historias Sinistras</h2>
+                <h2>História Sinistras</h2>
                 <p>
                   Uma jornada aterrorizante pelas profundezas do desconhecido.
                 </p>
                 <button type="button" class="meet-button">
-                  Conheça a história
+                  Conheça a historia
                 </button>
               </div>
             </div>
-            <div class="slide">
+            <div class="frame">
               <img
                 src="imagens/HQ-b/Screenshot_6.png"
                 alt="Personagem B Num mundo novo"
-                class="slider"
+                class="cover-img"
               />
               <div class="slide-info">
                 <h2>B num mundo novo</h2>
@@ -398,11 +343,11 @@
                 </button>
               </div>
             </div>
-            <div class="slide">
+            <div class="frame">
               <img
                 src="imagens/HQ-olhosKether/originais/banner-tapas.png"
                 alt="Personagem Olhos de Kether"
-                class="slider"
+                class="cover-img"
               />
               <div class="slide-info">
                 <h2>Olhos de Kether</h2>
@@ -413,68 +358,106 @@
               </div>
             </div>
           </div>
-          <button id="next-button" class="nav-button">&gt;</button>
+          <span id="next-button" class="material-icons">chevron_right</span>
         </div>
       </section>
-    </main>
 
-    <!-- Contato -->
-    <section id="contact" class="center">
-      <div>
-        <h2>Contate-nos</h2>
-        <div class="contact">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder=" "
-            class="contact-input"
-          />
-          <label for="name">Nome</label>
-        </div>
-        <div class="contact">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder=" "
-            class="contact-input"
-          />
-          <label for="email">E-mail</label>
-        </div>
-        <div class="contact">
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder=" "
-            class="contact-input"
-          />
-          <label for="phone">Telefone</label>
-        </div>
-
-        <button type="submit">Enviar</button>
-      </div>
-    </section>
-
-    <footer class="footer">
       <!-- Rodapé -->
-      <img
-        src="imagens/icones/logoshape-01 (Personalizado).png"
-        alt="Logotipo do Estúdio Arae"
-      />
-      <h2></h2>
-      <p>
-        &copy; 2024 <br />
-        />Leo Fraga
-      </p>
-      <section id="socialMedia">
-        <icon>
-          <img src="imagens/icones/instagram (Personalizado) (1).png" alt="" />
-          <img src="imagens/icones/contato (Personalizado) (1).png" alt="" />
-        </icon>
+      <section id="footer">
+        <div class="footer">
+          <img
+            class="footer-logo"
+            src="imagens/icones/logoshape-01 (Personalizado).png"
+            alt="Logo do Estudio Arae"
+          />
+          <div class="footerCenter">
+            <div class="team">
+              <h1>Time</h1>
+              <ul class="teamImages">
+                <li><img src="imagens/Time/cosmic - DANI.png" alt="" /></li>
+                <li><img src="imagens/Time/cosmic - FELIPE.png" alt="" /></li>
+                <li><img src="imagens/Time/cosmic - FILIPE.png" alt="" /></li>
+                <li><img src="imagens/Time/cosmic - LEO.png" alt="" /></li>
+                <li><img src="imagens/Time/cosmic - LUA.png" alt="" /></li>
+                <li><img src="imagens/Time/cosmic - MARI.png" alt="" /></li>
+              </ul>
+            </div>
+
+            <div class="newsletter">
+              <h1>NewsLetter</h1>
+              <form class="newsLetter-form" action="#" method="post" novalidate>
+                <div class="field">
+                  <label
+                    >Nome:
+                    <input
+                      type="text"
+                      name="nome"
+                      id="nome"
+                      placeholder="Digite seu nome"
+                    />
+                  </label>
+                </div>
+                <div class="field email-field">
+                  <label
+                    >E-mail:
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Digite seu e-mail"
+                    />
+                  </label>
+                  <button type="submit" class="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="redes-sociais">
+              <h1>Nos siga!</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                dolores sequi suscipit perferendis qui saepe sapiente atque hic
+                porro, commodi molestias ut numquam molestiae ipsam optio ullam
+                nemo. Architecto, optio.
+              </p>
+              <div class="social-media">
+                <ul>
+                  <li>
+                    <img
+                      src="imagens/icones/contato (Personalizado) (1).png"
+                      alt=""
+                    />
+                    <p>(71) 9 9999-9999</p>
+                  </li>
+                  <li>
+                    <img
+                      src="imagens/icones/instagram (Personalizado) (1).png"
+                      alt=""
+                    />
+                    <p>
+                      <a
+                        href="https://www.instagram.com/estudioarae?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"
+                        >@estudioarae</a
+                      >
+                    </p>
+                  </li>
+                  <!-- <li><img src="imagens/icones/003-whatsapp.png" alt="" /></li>
+              <li><img src="imagens/icones/005-facebook.png" alt="" /></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="traco" aria-hidden="true"></div>
+          <div class="traco" aria-hidden="true"></div> -->
+        </div>
+        <p class="copy-arae">
+          &copy; 2025 EstudioArae, All Rights Reserved By Leo Fraga
+        </p>
       </section>
-    </footer>
-    <script src="script.js"></script>
+      <!-- final aqui -->
+    </main>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
