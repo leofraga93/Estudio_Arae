@@ -171,6 +171,12 @@
     gap: 36px;
   }
 
+  .footerCenter h1,
+  .redes-sociais h1 {
+    text-align: center;
+    margin: 12px 0;
+  }
+
   .redes-sociais p {
     padding: 0 2px;
   }
@@ -191,6 +197,7 @@
   header {
     height: 8vh;
     align-content: center;
+    padding: 0;
   }
 
   #menu-burguer {
@@ -251,6 +258,7 @@
   /* Destaques */
   #destaques {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
 
@@ -259,48 +267,80 @@
     align-items: start;
 
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   .infoDestaques {
     grid-column: 1;
 
-    width: 24vw;
-    min-width: 40%;
-
-    flex: 1;
+    margin-left: 82px;
+    width: 512px;
+    padding: 0 12px;
   }
 
   .imagensDestaques {
     grid-column: 2;
     display: flex;
+    flex: 1;
 
-    height: 350px;
-    width: auto;
+    height: 335px;
+    width: 100%;
     position: absolute;
 
-    left: -10px;
-    top: -6px;
-    gap: 18px;
+    left: -190px;
+    top: -10px;
+    gap: 12px;
   }
 
   .itemDestaque {
-    width: 11%;
+    width: 100%;
+    height: 335px;
+
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+
+    transition: transform 0.4s ease;
+    cursor: pointer;
+
     margin-right: -48px;
   }
 
+  .itemDestaque:hover {
+    transform: scale(1.1);
+  }
+
   .itemDestaque img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    padding: 6px 0;
   }
 
   .buttonDestaque {
+    position: absolute;
+    top: 85%;
+    left: 7.5%;
+    transform: translate(-5%, 0);
     grid-column: span 2;
     justify-self: flex-start;
-    /*
-    */
   }
   /* Destaques concluido */
+
+  /* Paginas */
+  .frame .slide-info {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-30%, -50%);
+  }
+
+  .slide-info h2 {
+    font-size: 26px;
+  }
+
+  .slide-info p {
+    font-size: 18px;
+  }
+  /* Paginas Concluido */
 
   /* Rodapé */
   #footer {
