@@ -246,7 +246,7 @@
   }
 
   .slides {
-    max-height: 680px;
+    max-height: 100%;
   }
 
   .slide img {
@@ -273,8 +273,13 @@
   .infoDestaques {
     grid-column: 1;
 
+    margin-left: 88px;
+    /*
     margin-left: 82px;
-    width: 512px;
+     width: 512px; 
+     width: 68%;
+    */
+    max-width: 57%;
     padding: 0 12px;
   }
 
@@ -287,7 +292,7 @@
     width: 100%;
     position: absolute;
 
-    left: -190px;
+    left: -170px;
     top: -10px;
     gap: 12px;
   }
@@ -318,7 +323,7 @@
   .buttonDestaque {
     position: absolute;
     top: 85%;
-    left: 7.5%;
+    left: 10%;
     transform: translate(-5%, 0);
     grid-column: span 2;
     justify-self: flex-start;
